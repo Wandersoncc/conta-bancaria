@@ -21,15 +21,15 @@ def saque(valor):
         print('Digite um valor maior que R$0 para efetuar o saque.')
         return
     
-    elif valor > LIMITE_SAQUE:
+    if valor > LIMITE_SAQUE:
         print('O limite para saques é de R$500,00.')
         return
     
-    elif valor > saldo:
+    if valor > saldo:
         print('Saldo insuficiente.')
         return
     
-    elif saque_diario >= max_saque_diario:
+    if saque_diario >= max_saque_diario:
         print('Limite de saque diário atingido.')
         return 
     
